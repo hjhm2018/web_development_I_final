@@ -1,0 +1,602 @@
+header {
+  background-color: #1a1919;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+header h1 {
+  color: cornsilk;
+  font-family: 'Righteous', cursive;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+header img {
+  width: 5%;
+  margin: 0 10px;
+}
+
+header img:hover {
+  cursor: pointer;
+}
+
+header nav {
+  margin-left: 100px;
+}
+
+header a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 10px 5px 0 5px;
+  padding: 10px;
+  background-color: rgba(7, 7, 138, 0.644);
+  color: cornsilk;
+  border-radius: 5px;
+}
+
+header a:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+header .menu:hover {
+  background-color: cornsilk;
+}
+
+body {
+  background-color: #b9b6b6;
+}
+
+.menu {
+  width: 5%;
+  height: 50px;
+  background-color: darkgrey;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1a1919;
+  color: cornsilk;
+  padding: 10px 0 10px 10px;
+  font-weight: bold;
+  font-family: 'Righteous', cursive;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  header .navBar {
+    display: none;
+  }
+  header .menu {
+    display: block;
+    margin-left: 50px;
+    width: 5%;
+    margin-top: 2px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header .navBar {
+    margin-left: 60px;
+    margin-top: 0;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header a {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 526px) {
+  header h1 {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  header .menu {
+    margin-left: 40px;
+    height: 25px;
+    margin-top: 0;
+  }
+  header img {
+    width: 5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header .navBar {
+    margin-left: 180px;
+    margin-top: 0;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header a {
+    margin-top: 5px;
+  }
+}
+
+.containerOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 90%;
+  margin-top: 40px;
+}
+
+.containerOne div {
+  font-size: 45px;
+  width: 45%;
+  border: 0.5px solid black;
+  border-radius: 5px;
+}
+
+.containerOne div:nth-child(odd) {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 60px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.containerOne img {
+  width: 40%;
+  height: 100%;
+}
+
+.containerTwo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.containerTwo div {
+  margin: 30px 0;
+  width: 18%;
+  height: 200px;
+  padding-top: 80px;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.clickMe {
+  display: none;
+}
+
+#aboutDiv:hover, #educationDiv:hover, #experienceDiv:hover, #futureDiv:hover, #contactDiv:hover {
+  cursor: pointer;
+  background-color: navy;
+  color: cornsilk;
+}
+
+#aboutDiv:hover #aboutP, #aboutDiv:hover #educationP, #aboutDiv:hover #experienceP, #aboutDiv:hover #futureP, #aboutDiv:hover #contactP, #educationDiv:hover #aboutP, #educationDiv:hover #educationP, #educationDiv:hover #experienceP, #educationDiv:hover #futureP, #educationDiv:hover #contactP, #experienceDiv:hover #aboutP, #experienceDiv:hover #educationP, #experienceDiv:hover #experienceP, #experienceDiv:hover #futureP, #experienceDiv:hover #contactP, #futureDiv:hover #aboutP, #futureDiv:hover #educationP, #futureDiv:hover #experienceP, #futureDiv:hover #futureP, #futureDiv:hover #contactP, #contactDiv:hover #aboutP, #contactDiv:hover #educationP, #contactDiv:hover #experienceP, #contactDiv:hover #futureP, #contactDiv:hover #contactP {
+  display: none;
+}
+
+#aboutDiv:hover .clickMe, #educationDiv:hover .clickMe, #experienceDiv:hover .clickMe, #futureDiv:hover .clickMe, #contactDiv:hover .clickMe {
+  display: block;
+}
+
+.empty {
+  height: 100px;
+}
+
+.educationContainer {
+  width: 80%;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.educationContainer h1 {
+  font-style: italic;
+  background-color: navy;
+  color: cornsilk;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.educationContainer i {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+.educationContainer .education {
+  text-align: center;
+}
+
+.educationContainer h2 {
+  background-color: black;
+  margin: 0;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  color: cornsilk;
+  padding-left: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-style: italic;
+}
+
+.educationContainer h2:hover {
+  background-color: navy;
+  font-style: italic;
+}
+
+.educationContainer p {
+  padding-left: 10px;
+  margin-left: 5px;
+}
+
+.educationContainer #descriptionUG img, .educationContainer #descriptionPG1 img, .educationContainer #descriptionPG2 img {
+  width: 10%;
+  margin-right: 5px;
+}
+
+.educationContainer #descriptionUG p, .educationContainer #descriptionPG1 p, .educationContainer #descriptionPG2 p {
+  padding-top: 30px;
+}
+
+.educationContainer span {
+  font-weight: bold;
+}
+
+.educationContainer #descriptionUG, .educationContainer #descriptionPG1, .educationContainer #descriptionPG2, .educationContainer #coursesDescription, .educationContainer #skillsDescription {
+  display: none;
+  margin: 5px;
+}
+
+.containerAbout {
+  width: 80%;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.containerAbout img[alt='Henry & Sister'] {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.containerAbout h1 {
+  font-style: italic;
+  background-color: navy;
+  color: cornsilk;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.containerAbout p:nth-child(even) {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+}
+
+.containerAbout p:nth-child(odd) {
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+}
+
+.containerAbout .heading {
+  background-color: black;
+  margin: 0;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  color: cornsilk;
+  font-style: italic;
+}
+
+.containerAbout #whoAmI, .containerAbout #myCountry, .containerAbout #myCity, .containerAbout #myHobbies {
+  display: none;
+}
+
+.containerAbout #whoAmIContainer:hover, .containerAbout #myCountryContainer:hover, .containerAbout #myCityContainer:hover, .containerAbout #myHobbiesContainer:hover {
+  cursor: pointer;
+}
+
+.containerAbout .heading:hover {
+  background-color: navy;
+}
+
+.containerAbout ul {
+  list-style-type: none;
+}
+
+.containerAbout #myCountryContainer img {
+  margin-top: 20px;
+  width: 25%;
+}
+
+.containerAbout #myCountryContainer figcaption {
+  font-weight: bold;
+}
+
+.containerAbout #myCountryContainer .pictures {
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.containerAbout #myCountryContainer .pictures img {
+  width: 90%;
+  cursor: pointer;
+}
+
+.containerAbout #picture {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background: url("../img/mapsouthamerica.gif") no-repeat center;
+  margin-bottom: 20px;
+  margin-top: 0;
+  background-size: 300px 300px;
+}
+
+.containerAbout #myCity img, .containerAbout #myHobbies img {
+  width: 60%;
+}
+
+.containerAbout #myCity p, .containerAbout #myHobbies p {
+  margin: 20px 0;
+}
+
+.containerAbout #myCity figcaption, .containerAbout #myHobbies figcaption {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.containerAbout #myCity h3, .containerAbout #myHobbies h3 {
+  font-style: italic;
+}
+
+.experienceContainer {
+  width: 80%;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.experienceContainer .heading {
+  background-color: black;
+  margin: 0;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  color: cornsilk;
+  font-style: italic;
+}
+
+.experienceContainer h1 {
+  font-style: italic;
+  background-color: navy;
+  color: cornsilk;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.experienceContainer .experience {
+  text-align: center;
+}
+
+.experienceContainer i {
+  display: inline-block;
+  margin: 0 10px 20px 10px;
+  font-size: 60px;
+}
+
+.experienceContainer h2, .experienceContainer h3 {
+  font-style: italic;
+}
+
+.experienceContainer ul {
+  list-style-type: square;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.experienceContainer #softwareSpecialist, .experienceContainer #lecturerAssistant, .experienceContainer #intern {
+  display: none;
+}
+
+.experienceContainer #softwareSpecialistContainer:hover, .experienceContainer #lecturerAssistantContainer:hover, .experienceContainer #internContainer:hover, .experienceContainer #projectsContainer:hover {
+  cursor: pointer;
+}
+
+.experienceContainer .heading:hover {
+  background-color: navy;
+  font-style: italic;
+}
+
+.experienceContainer #projects {
+  display: none;
+}
+
+.experienceContainer #projects img {
+  width: 70%;
+  border-radius: 5px;
+}
+
+.experienceContainer #projects h3 {
+  margin: 10px;
+}
+
+.experienceContainer #projects img:hover {
+  border: 3px solid blue;
+}
+
+.futureContainer {
+  width: 80%;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.futureContainer h1 {
+  font-style: italic;
+  background-color: navy;
+  color: cornsilk;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.futureContainer i {
+  display: block;
+  margin: 0 10px 20px 10px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.futureContainer p {
+  font-weight: bold;
+  margin: 20px;
+}
+
+.futureContainer img {
+  width: 60%;
+  border-radius: 5px;
+}
+
+.futureContainer .oil {
+  background-color: white;
+}
+
+.contactContainer {
+  width: 80%;
+  border: 1px solid cornsilk;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contactContainer p {
+  font-weight: bold;
+  margin: 20px;
+}
+
+.contactContainer h1 {
+  font-style: italic;
+  background-color: navy;
+  color: cornsilk;
+  margin-bottom: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.contactContainer .contact {
+  text-align: center;
+}
+
+.contactContainer .contact i {
+  display: inline-block;
+  margin: 0 10px 10px 10px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.contactContainer i {
+  display: inline-block;
+  margin: 0 10px 20px 10px;
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+.contactContainer h3 {
+  font-style: italic;
+  margin: 15px 0;
+}
+
+.contactContainer img {
+  width: 60%;
+  border-radius: 5px;
+}
+
+.contactContainer .github {
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: navy;
+  color: cornsilk;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.contactContainer .github img {
+  border-radius: 50%;
+  width: 30%;
+}
+
+.contactContainer .github a {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contactContainer .github a:hover {
+  background-color: grey;
+}
+
+.contactContainer form {
+  display: block;
+  width: 50%;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.contactContainer form input, .contactContainer form textarea {
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.contactContainer form input {
+  text-align: center;
+}
+
+.contactContainer form input[type=submit]:hover {
+  background-color: navy;
+  color: cornsilk;
+}
+/*# sourceMappingURL=main.css.map */

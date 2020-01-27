@@ -1,0 +1,649 @@
+// Header and Navbar
+header{
+    background-color: rgb(26, 25, 25);
+    display: flex;
+    padding: 10px;
+    
+
+    h1{
+        color: cornsilk;
+        // font-family: 'Pacifico', cursive;
+        font-family: 'Righteous', cursive;
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+    img{
+        width: 5%;
+        margin: 0 10px;
+    }
+
+    img:hover{
+        cursor: pointer;
+    }
+
+    nav{
+        margin-left: 100px;
+    }
+
+    a{
+        display: inline-block;
+        text-decoration: none;
+        margin: 10px 5px 0 5px;
+        padding: 10px;
+        background-color: rgba(7, 7, 138, 0.644);
+        color: cornsilk;
+        border-radius: 5px;
+    }
+
+    a:hover{
+        background-color: black;
+        color: white;
+        border: 1px solid white;
+    }
+
+    .menu:hover{
+        background-color: cornsilk;
+    }
+}
+
+body{
+    background-color: rgb(185, 182, 182);
+}
+
+.menu{
+    width: 5%;
+    height: 50px;
+    background-color: darkgrey;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(26, 25, 25);
+    color: cornsilk;
+    padding: 10px 0 10px 10px;
+    font-weight: bold;
+    font-family: 'Righteous', cursive;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 992px){
+    header{
+        .navBar{
+            display: none;
+        }
+    
+        .menu{
+            display: block;
+            margin-left: 50px;
+            width: 5%;
+            margin-top: 2px;
+        }
+
+        h1{
+            font-size: 2rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px){
+    header{
+        .navBar{
+            margin-left: 60px;
+            margin-top: 0;
+          }
+
+        h1{
+            font-size: 1.5rem;
+        }
+
+        a{
+            margin-top: 5px;
+        }
+    }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 526px){
+    header{
+        h1{
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .menu{
+            margin-left: 40px;
+            height: 25px;
+            margin-top: 0;
+        }
+
+        img{
+            width: 5%;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px){
+    header{
+        .navBar{
+            margin-left: 180px;
+            margin-top: 0;
+          }
+
+        h1{
+            font-size: 2rem;
+        }
+
+        a{
+            margin-top: 5px;
+        }
+    }
+}
+
+// Index Page
+.containerOne{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 90%;
+    margin-top: 40px;
+
+    div{
+        font-size: 45px;
+        width: 45%;
+        border: 0.5px solid black;
+        border-radius: 5px;
+    }
+
+    div:nth-child(odd){
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding: 60px;
+        font-weight: bold;
+        font-style: italic;;
+        // background-color: crimson;
+    }
+
+
+    img{
+        width: 40%;
+        height: 100%;
+    }
+}
+
+.containerTwo{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+
+    div{
+        margin: 30px 0;
+        width: 18%;
+        height: 200px;
+        padding-top: 80px;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.clickMe{
+    display: none;
+}
+
+#aboutDiv:hover, #educationDiv:hover, #experienceDiv:hover, #futureDiv:hover, #contactDiv:hover{
+    cursor: pointer;
+    background-color: navy;
+    color: cornsilk;
+    
+    #aboutP, #educationP, #experienceP, #futureP, #contactP{
+        display: none;
+    }
+
+    .clickMe{
+        display: block;
+    }
+}
+
+.empty{
+    height: 100px;
+}
+
+// Education Page
+
+.educationContainer{
+    width: 80%;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    h1{
+        font-style: italic;
+        background-color: navy;
+        color: cornsilk;
+        margin-bottom: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    i{
+        display: inline-block;
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 60px;
+    }
+
+    .education{
+        text-align: center;
+    }
+
+    
+
+    h2{
+        background-color: black;
+        margin: 0;
+        border: 1px solid cornsilk;
+        border-radius: 5px;
+        color: cornsilk;
+        padding-left: 5px;
+        cursor: pointer;
+        text-align: center;
+        font-style: italic;
+    }
+
+    h2:hover{
+        background-color: navy;
+        font-style: italic;
+    }
+
+    p{
+        padding-left: 10px;
+        margin-left: 5px;
+    }
+
+    #descriptionUG, #descriptionPG1, #descriptionPG2{
+        img{
+            width: 10%;
+            // float: left;
+            margin-right: 5px;
+        }
+
+        p{
+            padding-top: 30px;
+        }
+    }
+    
+
+    span{
+        font-weight: bold;
+    }
+
+    #descriptionUG, #descriptionPG1, #descriptionPG2, #coursesDescription, #skillsDescription{
+        display: none;
+        margin: 5px;
+    }
+}
+
+// About Me Page
+
+.containerAbout{
+    width: 80%;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    
+    img[alt = 'Henry & Sister']{
+        width: 20%;
+        border-radius: 50%;
+    }
+
+    h1{
+        font-style: italic;
+        background-color: navy;
+        color: cornsilk;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    p:nth-child(even){
+        font-weight: bold;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    p:nth-child(odd){
+        font-weight: bold;
+        font-style: italic;
+        margin: 0;
+    }
+
+    .heading{
+        background-color: black;
+        margin: 0;
+        border: 1px solid cornsilk;
+        border-radius: 5px;
+        color: cornsilk;
+        font-style: italic;
+    }
+
+    #whoAmI, #myCountry, #myCity, #myHobbies{
+        display: none;
+    }
+
+    #whoAmIContainer:hover, #myCountryContainer:hover, #myCityContainer:hover, #myHobbiesContainer:hover{
+        cursor: pointer;
+    }
+    
+    .heading:hover{
+        background-color: navy;
+    }
+  
+
+    ul{
+        list-style-type: none;
+    }
+
+    #myCountryContainer {
+        img{
+            margin-top: 20px;
+            width: 25%;
+        }
+
+        figcaption{
+            font-weight: bold;
+        }
+
+        .pictures{
+
+            height: 300px;
+
+            img{
+                width: 90%;
+                cursor: pointer;
+            }
+            display: flex;
+
+            
+        }
+    }
+
+    // #myCountryContainer:hover #myCountry{
+    //     display: block;
+    // }
+
+    // #whoAmIContainer:hover #whoAmI{
+    //     display: block;
+    // }
+
+    #picture{
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        background: url("../img/mapsouthamerica.gif") no-repeat center;
+        margin-bottom: 20px;
+        margin-top: 0;
+        background-size: 300px 300px;
+    }
+
+    #myCity, #myHobbies{
+        img{
+            width: 60%;
+        }
+
+        p{
+            margin: 20px 0;
+        }
+
+        figcaption{
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h3{
+            font-style: italic;
+        }
+    }
+
+}
+
+// Experience Container
+
+.experienceContainer{
+    width: 80%;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+
+    .heading{
+        background-color: black;
+        margin: 0;
+        border: 1px solid cornsilk;
+        border-radius: 5px;
+        color: cornsilk;
+        font-style: italic;
+    }
+
+    h1{
+        font-style: italic;
+        background-color: navy;
+        color: cornsilk;
+        margin-bottom: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .experience{
+        text-align: center;
+    }
+
+    i{
+        display: inline-block;
+        margin: 0 10px 20px 10px;
+        font-size: 60px;
+    }
+
+    h2, h3{
+        font-style: italic;
+    }
+
+    ul{
+        list-style-type: square;
+        display: block;
+        margin: 0 auto;
+        text-align: left;
+    }
+
+    #softwareSpecialist, #lecturerAssistant, #intern{
+        display: none;
+    }
+
+    #softwareSpecialistContainer:hover, #lecturerAssistantContainer:hover, #internContainer:hover, #projectsContainer:hover{
+        cursor: pointer;
+    }
+    
+    .heading:hover{
+        background-color: navy;
+        font-style: italic;
+    }
+
+    #projects{
+        display: none;
+        img{
+            width: 70%;
+            border-radius: 5px;
+        }
+
+        h3{
+            margin: 10px;
+        }
+
+        img:hover{
+            border: 3px solid blue;
+        }
+
+    
+    }
+
+}
+
+.futureContainer{
+    width: 80%;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+
+    h1{
+        font-style: italic;
+        background-color: navy;
+        color: cornsilk;
+        margin-bottom: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    i{
+        display: block;
+        margin: 0 10px 20px 10px;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    p{
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    img{
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    .oil{
+        background-color: white;
+    }
+}
+
+.contactContainer{
+    width: 80%;
+    border: 1px solid cornsilk;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+
+    p{
+        font-weight: bold;
+        margin: 20px;
+    }
+
+    h1{
+        font-style: italic;
+        background-color: navy;
+        color: cornsilk;
+        margin-bottom: 20px;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    .contact{
+        text-align: center;
+        i{
+            display: inline-block;
+            margin: 0 10px 10px 10px;
+            font-size: 60px;
+            text-align: center;
+        }
+    }
+
+    i{
+        display: inline-block;
+        margin: 0 10px 20px 10px;
+        font-size: 1.75rem;
+        text-align: center;
+    }
+
+    h3{
+        font-style: italic;
+        margin: 15px 0;
+    }
+
+    img{
+        width: 60%;
+        border-radius: 5px;
+    }
+
+    .github{
+        width: 30%;
+        border: 1px solid black;
+        border-radius: 5px;
+        background-color: navy;
+        color: cornsilk;
+        margin: 0 auto;
+        padding: 10px;
+
+        img{
+            border-radius: 50%;
+            width: 30%;
+        }
+
+        a{
+            display: inline-block;
+            background-color: black;
+            color: white;
+            padding: 5px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        a:hover{
+            background-color: grey;
+        }
+    }
+
+    form{
+        display: block;
+        width: 50%;
+        background-color: black;
+        padding: 5px;
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        input, textarea{
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        input{
+            text-align: center;
+        }
+
+        input[type= submit]:hover{
+            background-color: navy;
+            color: cornsilk;
+        }    
+    }
+}
+
+
+
+
+
+
+
+
