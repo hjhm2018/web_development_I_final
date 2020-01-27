@@ -72,62 +72,6 @@ footer {
   margin-top: 20px;
 }
 
-@media only screen and (max-width: 992px) {
-  header .navBar {
-    display: none;
-  }
-  header .menu {
-    display: block;
-    margin-left: 50px;
-    width: 5%;
-    margin-top: 2px;
-  }
-  header h1 {
-    font-size: 2rem;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  header .navBar {
-    margin-left: 60px;
-    margin-top: 0;
-  }
-  header h1 {
-    font-size: 1.5rem;
-  }
-  header a {
-    margin-top: 5px;
-  }
-}
-
-@media only screen and (min-width: 360px) and (max-width: 526px) {
-  header h1 {
-    font-size: 1.2rem;
-    margin-top: 0;
-  }
-  header .menu {
-    margin-left: 40px;
-    height: 25px;
-    margin-top: 0;
-  }
-  header img {
-    width: 5%;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  header .navBar {
-    margin-left: 180px;
-    margin-top: 0;
-  }
-  header h1 {
-    font-size: 2rem;
-  }
-  header a {
-    margin-top: 5px;
-  }
-}
-
 .containerOne {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,8 +88,11 @@ footer {
 .containerOne div {
   font-size: 45px;
   width: 45%;
-  border: 0.5px solid black;
+  border: 0.5px solid gray;
   border-radius: 5px;
+  background-color: black;
+  color: gray;
+  font-style: italic;
 }
 
 .containerOne div:nth-child(odd) {
@@ -176,10 +123,13 @@ footer {
   width: 18%;
   height: 200px;
   padding-top: 80px;
-  border: 1px solid black;
+  border: 1px solid darkblue;
   border-radius: 5px;
   text-align: center;
   font-weight: bold;
+  background-color: black;
+  color: cornsilk;
+  font-style: italic;
 }
 
 .clickMe {
@@ -598,5 +548,159 @@ footer {
 .contactContainer form input[type=submit]:hover {
   background-color: navy;
   color: cornsilk;
+}
+
+@media only screen and (max-width: 992px) {
+  header .navBar {
+    display: none;
+  }
+  header .menu {
+    display: block;
+    margin-left: 50px;
+    width: 5%;
+    margin-top: 2px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  header .navBar {
+    margin-left: 60px;
+    margin-top: 0;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header a {
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 360px) and (max-width: 526px) {
+  header h1 {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  header .menu {
+    margin-left: 40px;
+    height: 25px;
+    margin-top: 0;
+  }
+  header img {
+    width: 5%;
+  }
+  .containerOne {
+    margin-top: 10px;
+    width: 95%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .containerOne div {
+    font-size: 20px;
+    width: 100%;
+    margin: 5px;
+  }
+  .containerOne img {
+    width: 40%;
+    height: 100%;
+  }
+  .containerTwo {
+    width: 95%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .containerTwo div {
+    width: 100%;
+    margin: 5px;
+  }
+  .containerAbout {
+    width: 95%;
+  }
+  .containerAbout #myCountryContainer img {
+    margin-top: 20px;
+    width: 25%;
+  }
+  .containerAbout #myCountryContainer #picture {
+    display: none;
+  }
+  .containerAbout #myCountryContainer .pictures {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 2000px;
+  }
+  .containerAbout #myCountryContainer .pictures img {
+    width: 90%;
+    cursor: pointer;
+  }
+  .educationContainer {
+    width: 95%;
+  }
+  .educationContainer #descriptionUG img, .educationContainer #descriptionPG1 img, .educationContainer #descriptionPG2 img {
+    width: 50px;
+    height: 50px;
+  }
+  .educationContainer #descriptionUG p, .educationContainer #descriptionPG1 p, .educationContainer #descriptionPG2 p {
+    padding-top: 0px;
+  }
+  .experienceContainer {
+    width: 95%;
+  }
+  .experienceContainer h3 {
+    font-size: 20px;
+  }
+  .futureContainer {
+    width: 95%;
+  }
+  .futureContainer img {
+    width: 80%;
+  }
+  .contactContainer {
+    width: 95%;
+  }
+  .contactContainer img {
+    width: 60%;
+  }
+  .contactContainer h3 {
+    margin: 10px;
+    padding-bottom: 0;
+  }
+  .contactContainer i {
+    margin: 0;
+  }
+  .contactContainer .github {
+    width: 50%;
+    margin-top: 10px;
+  }
+  .contactContainer .github img {
+    border-radius: 50%;
+    width: 40%;
+  }
+  .contactContainer form {
+    width: 80%;
+  }
+  .contactContainer form textarea {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  header .navBar {
+    margin-left: 180px;
+    margin-top: 0;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header a {
+    margin-top: 5px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
